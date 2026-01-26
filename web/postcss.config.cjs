@@ -1,7 +1,7 @@
 module.exports = {
-  plugins: {
-    'postcss-px-to-viewport-8-plugin': {
-      viewportWidth: 1920,
-    },
-  },
-};
+	plugins: {
+		'postcss-px-to-viewport-8-plugin': {
+			viewportWidth: 1280
+		}
+	}
+}
