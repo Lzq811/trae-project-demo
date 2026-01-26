@@ -5,7 +5,12 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { onMounted } from 'vue'
+onMounted(() => {
+  console.log('Home mounted', import.meta.env)
+})
+</script>
 
 <style scoped>
 .home {
