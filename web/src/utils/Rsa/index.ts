@@ -13,7 +13,7 @@ if (VITE_ENV_FLAG === 'prod') {
   privateKey = testPrivateKey
 }
 
-export const RSA2048 = (val: string, method: string, time: string) => {
+export const RSA_SIGN_2048 = (val: string, method: string, time: string) => {
   // 此处操作与后端约定参数
   const app_id = `app_id=${VITE_APP_ID}&biz_content=${val}&charset=utf-8&format=json&method=${method}&sign_type=RSA2&timestamp=${time}&version=1.0`
   // 创建RSAKey对象
@@ -38,7 +38,7 @@ export const RSA2048 = (val: string, method: string, time: string) => {
 }
 
 // 登录时候 加密 账号密码使用
-export const Rsa2048 = (str = '') => {
+export const RSA_ENCRYPT_2048 = (str = '') => {
   const encrypt = new JSEncrypt({
     default_key_size: '2048'
   })
